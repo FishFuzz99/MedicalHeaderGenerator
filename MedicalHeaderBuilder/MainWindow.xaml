@@ -1,0 +1,156 @@
+﻿<Window x:Class="MedicalHeaderBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicalHeaderBuilder"
+        mc:Ignorable="d"
+        Title="Transcription Headers Generator" Height="725" Width="600">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Margin" Value="3" />
+          
+        </Style>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="20">
+        <Grid x:Name="Grid1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="whiteCountLabel" Grid.Column="0" Grid.Row="0">White Count</Label>
+            <TextBox x:Name="whiteCount" Grid.Column="1" Grid.Row="0"></TextBox>
+
+            <Label x:Name="redBloodCellsLabel" Grid.Column="0" Grid.Row="1">RBC</Label>
+            <TextBox x:Name="redBloodCells" Grid.Column="1" Grid.Row="1"></TextBox>
+
+            <Label x:Name="hemoglobinLabel" Grid.Column="0" Grid.Row="2">Hemoglobin</Label>
+            <TextBox x:Name="hemoglobin"  Grid.Column="1" Grid.Row="2"></TextBox>
+            
+            <Label x:Name="hematocritLabel" Grid.Column="0" Grid.Row="3">Hematocrit</Label>
+            <TextBox x:Name="hematocrit" Grid.Column="1" Grid.Row="3"></TextBox>
+            
+            <Label x:Name="plateletsLabel" Grid.Column="0" Grid.Row="4">Platelets</Label>
+            <TextBox x:Name="platelets" Grid.Column="1" Grid.Row="4"></TextBox>
+            
+            <Label x:Name="MCVLabel" Grid.Column="0" Grid.Row="5">MCV</Label>
+            <TextBox x:Name="MCV" Grid.Column="1" Grid.Row="5"></TextBox>
+            
+            <Label x:Name="sodiumLabel" Grid.Column="0" Grid.Row="6">Sodium</Label>
+            <TextBox x:Name="sodium" Grid.Column="1" Grid.Row="6"></TextBox>
+            
+            <Label x:Name="potassiumLabel" Grid.Column="0" Grid.Row="7">Potassium</Label>
+            <TextBox x:Name="potassium" Grid.Column="1" Grid.Row="7"></TextBox>
+            
+            <Label x:Name="chlorideLabel" Grid.Column="0" Grid.Row="8">Chloride</Label>
+            <TextBox x:Name="chloride" Grid.Column="1" Grid.Row="8"></TextBox>
+            
+            <Label x:Name="bicarbLabel" Grid.Column="0" Grid.Row="9">Bicarb</Label>
+            <TextBox x:Name="bicarb" Grid.Column="1" Grid.Row="9" ></TextBox>
+            
+            <Label x:Name="BUNLabel" Grid.Column="0" Grid.Row="10">BUN</Label>
+            <TextBox x:Name="BUN" Grid.Column="1" Grid.Row="10" ></TextBox>
+            
+            <Label x:Name="creatinineLabel" Grid.Column="0" Grid.Row="11">Creatinine</Label>
+            <TextBox x:Name="creatinine" Grid.Column="1" Grid.Row="11" ></TextBox>
+            
+            <Label x:Name="glucoseLabel" Grid.Column="0" Grid.Row="12">Glucose</Label>
+            <TextBox x:Name="glucose" Grid.Column="1" Grid.Row="12" ></TextBox>
+
+            <Label x:Name="calciumLabel" Grid.Column="0" Grid.Row="13">Calcium</Label>
+            <TextBox x:Name="calcium" Grid.Column="1" Grid.Row="13" ></TextBox>
+
+            <Label x:Name="albuminLabel" Grid.Column="0" Grid.Row="14">Albumin</Label>
+            <TextBox x:Name="albumin" Grid.Column="1" Grid.Row="14" ></TextBox>
+
+            <Label x:Name="bilirubinLabel" Grid.Column="2" Grid.Row="0">Bilirubin</Label>
+            <TextBox x:Name="blilrubin" Grid.Column="3" Grid.Row="0" ></TextBox>
+
+            <Label x:Name="ALTLabel" Grid.Column="2" Grid.Row="1">ALT</Label>
+            <TextBox x:Name="ALT" Grid.Column="3" Grid.Row="1" ></TextBox>
+
+            <Label x:Name="ASTLabel" Grid.Column="2" Grid.Row="2">AST</Label>
+            <TextBox x:Name="AST" Grid.Column="3" Grid.Row="2" ></TextBox>
+
+            <Label x:Name="allcalinePhosphataseLabel" Grid.Column="2" Grid.Row="3">Alkaline Phosphatase</Label>
+            <TextBox x:Name="allcalinePhosphatase" Grid.Column="3" Grid.Row="3" ></TextBox>
+
+            <Label x:Name="proteinLabel" Grid.Column="2" Grid.Row="4">Protein</Label>
+            <TextBox x:Name="protein" Grid.Column="3" Grid.Row="4" ></TextBox>
+
+            <Label x:Name="ironLabel" Grid.Column="2" Grid.Row="5">Iron</Label>
+            <TextBox x:Name="iron" Grid.Column="3" Grid.Row="5" ></TextBox>
+
+            <Label x:Name="percentSaturationLabel" Grid.Column="2" Grid.Row="6">Percent Saturation</Label>
+            <TextBox x:Name="percentSaturation" Grid.Column="3" Grid.Row="6" ></TextBox>
+
+            <Label x:Name="ferritinLabel" Grid.Column="2" Grid.Row="7">Ferritin</Label>
+            <TextBox x:Name="ferritin" Grid.Column="3" Grid.Row="7" ></TextBox>
+
+            <Label x:Name="magnesiumLabel" Grid.Column="2" Grid.Row="8">Magnesium</Label>
+            <TextBox x:Name="magnesium" Grid.Column="3" Grid.Row="8" ></TextBox>
+
+            <Label x:Name="CA199Label" Grid.Column="2" Grid.Row="9">CA 19-9</Label>
+            <TextBox x:Name="CA199" Grid.Column="3" Grid.Row="9" ></TextBox>
+
+            <Label x:Name="CA125Label" Grid.Column="2" Grid.Row="10">CA-125</Label>
+            <TextBox x:Name="CA125" Grid.Column="3" Grid.Row="10" ></TextBox>
+
+            <Label x:Name="CA2729Label" Grid.Column="2" Grid.Row="11">CA 27.29</Label>
+            <TextBox x:Name="CA2729" Grid.Column="3" Grid.Row="11" ></TextBox>
+
+            <Label x:Name="PSALabel" Grid.Column="2" Grid.Row="12">PSA</Label>
+            <TextBox x:Name="PSA" Grid.Column="3" Grid.Row="12"></TextBox>
+
+            <Label x:Name="alphaFetoproteinLabel" Grid.Column="2" Grid.Row="13">Alpha Fetoprotein</Label>
+            <TextBox x:Name="alphaFetoprotein" Grid.Column="3" Grid.Row="13"></TextBox>
+
+            <Label x:Name="INRLabel" Grid.Column="2" Grid.Row="14">INR</Label>
+            <TextBox x:Name="INR" Grid.Column="3" Grid.Row="14" ></TextBox>
+
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" x:Name="Generate_Header" Width="150px" Style="{x:Null}" Click="Generate_Header_Click" Margin="5" HorizontalAlignment="Center" >
+                Generate Header
+            </Button>
+            <Button Grid.Column="1" Grid.Row="0" x:Name="Clear_Fields" Width="150px" Style="{x:Null}" Click="Clear_Fields_Click" Margin="5" HorizontalAlignment="Center">
+                Clear Fields
+            </Button>
+        </Grid>
+        
+        <TextBox TextWrapping="Wrap" x:Name="result" Height="125px" Text="{Binding values.result}" Focusable="True" Margin="3" />
+
+        
+    </StackPanel>
+
+</Window>

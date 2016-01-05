@@ -1,0 +1,14 @@
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\bin\Release\MedicalHeaderBuilder.exe.config
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\bin\Release\MedicalHeaderBuilder.exe
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\bin\Release\MedicalHeaderBuilder.pdb
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MainWindow.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\App.g.cs
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder_MarkupCompile.cache
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder_MarkupCompile.lref
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MainWindow.baml
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.g.resources
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.Properties.Resources.resources
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.csproj.GenerateResource.Cache
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.exe
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.pdb
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Release\MedicalHeaderBuilder.csprojResolveAssemblyReference.cache
