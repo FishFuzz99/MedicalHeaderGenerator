@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MedicalHeaderBuilder
 {
-    public partial class Values
+    public partial class ValueModel
     {
         public string whiteCount { get; set; }
         public string hemoglobin { get; set; }

@@ -22,12 +22,12 @@ namespace MedicalHeaderBuilder
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Values values;
+        private ValueModel values;
 
         public MainWindow()
         {
             InitializeComponent();
-            values = new Values();
+            values = new ValueModel();
             this.DataContext = values;
         }
 
@@ -62,16 +62,24 @@ namespace MedicalHeaderBuilder
                         if (element2.GetType() == typeof(Label))
                         {
                             Label label = (Label)element2;
-                            if (label.Name.Replace("Label", "") == textBox.Name)
+                            if (label.Name.Replace("Label", "") == textBox.Name.Replace("withis", ""))
                             {
-                                checkAndAppend(textBox, label);
+                                if (textBox.Name.Contains("withis"))
+                                {
+                                    checkAndAppend(textBox, label, true);
+                                }
+                                else
+                                {
+                                    checkAndAppend(textBox, label, false);
+                                }
+
                             }
                         }
                     }
                 }
             }
 
-            char[] charsToTrim = { ',', ' ' };
+            char[] charsToTrim = { ',', ' ', '.' };
             if (values.result != "" && values.result != null)
             {
                 values.result = values.result.TrimEnd(charsToTrim) + ".";
@@ -99,8 +107,15 @@ namespace MedicalHeaderBuilder
             return true;
         }
 
-        public void checkAndAppend(TextBox field, Label label)
+        public void checkAndAppend(TextBox field, Label label, bool withIs)
         {
+            String withIsString = "";
+            String endingPunctuation = ",";
+            if(withIs)
+            {
+                withIsString = " is";
+                endingPunctuation = ".";
+            }
             if (field.GetLineText(0) != "")
             {
                 if (label.Name == "plateletsLabel")
@@ -115,19 +130,27 @@ namespace MedicalHeaderBuilder
                 }
                 if (values.result == null || values.result == "")
                 {
-                    values.result += label.Content.ToString() + " " + field.GetLineText(0) + ", ";
+                    if (IsAllUpper(label.Content.ToString()))
+                    {
+                        values.result += label.Content.ToString() + withIsString  + " " + field.GetLineText(0);
+                    }
+                    else
+                    {
+                        values.result += char.ToUpper(label.Content.ToString()[0])  + label.Content.ToString().ToLower().Substring(1) + withIsString + " " + field.GetLineText(0);
+                    }
                 }
                 else
                 {
                     if (IsAllUpper(label.Content.ToString()))
                     {
-                        values.result += label.Content.ToString() + " " + field.GetLineText(0) + ", ";
+                        values.result += label.Content.ToString() + withIsString + " " + field.GetLineText(0);
                     }
                     else
                     {
-                        values.result += label.Content.ToString().ToLower() + " " + field.GetLineText(0) + ", ";
+                        values.result += label.Content.ToString().ToLower() + withIsString + " " + field.GetLineText(0);
                     }
                 }
+                values.result += endingPunctuation + " ";
             }
         }
     }

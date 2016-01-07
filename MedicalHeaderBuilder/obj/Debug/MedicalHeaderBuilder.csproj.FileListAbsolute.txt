@@ -11,3 +11,4 @@ C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\Medic
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Debug\MedicalHeaderBuilder.csproj.GenerateResource.Cache
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Debug\MedicalHeaderBuilder.exe
 C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Debug\MedicalHeaderBuilder.pdb
+C:\Users\Andrew\Documents\Visual Studio 2015\Projects\MedicalHeaderBuilder\MedicalHeaderBuilder\obj\Debug\MedicalHeaderBuilder.csprojResolveAssemblyReference.cache
