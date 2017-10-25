@@ -42,97 +42,97 @@
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
             <Label x:Name="whiteCountLabel" Grid.Column="0" Grid.Row="0">White Count</Label>
-            <TextBox x:Name="whiteCount" Grid.Column="1" Grid.Row="0"></TextBox>
+            <TextBox x:Name="whiteCount1" Grid.Column="1" Grid.Row="0"></TextBox>
 
             <Label x:Name="redBloodCellsLabel" Grid.Column="0" Grid.Row="1">RBC</Label>
-            <TextBox x:Name="redBloodCells" Grid.Column="1" Grid.Row="1"></TextBox>
+            <TextBox x:Name="redBloodCells1" Grid.Column="1" Grid.Row="1"></TextBox>
 
             <Label x:Name="hemoglobinLabel" Grid.Column="0" Grid.Row="2">Hemoglobin</Label>
-            <TextBox x:Name="hemoglobin"  Grid.Column="1" Grid.Row="2"></TextBox>
+            <TextBox x:Name="hemoglobin1"  Grid.Column="1" Grid.Row="2"></TextBox>
             
             <Label x:Name="hematocritLabel" Grid.Column="0" Grid.Row="3">Hematocrit</Label>
-            <TextBox x:Name="hematocrit" Grid.Column="1" Grid.Row="3"></TextBox>
+            <TextBox x:Name="hematocrit1" Grid.Column="1" Grid.Row="3"></TextBox>
             
             <Label x:Name="plateletsLabel" Grid.Column="0" Grid.Row="4">Platelets</Label>
-            <TextBox x:Name="platelets" Grid.Column="1" Grid.Row="4"></TextBox>
+            <TextBox x:Name="platelets1" Grid.Column="1" Grid.Row="4"></TextBox>
             
             <Label x:Name="MCVLabel" Grid.Column="0" Grid.Row="5">MCV</Label>
-            <TextBox x:Name="MCV" Grid.Column="1" Grid.Row="5"></TextBox>
+            <TextBox x:Name="MCV1" Grid.Column="1" Grid.Row="5"></TextBox>
             
             <Label x:Name="sodiumLabel" Grid.Column="0" Grid.Row="6">Sodium</Label>
-            <TextBox x:Name="sodium" Grid.Column="1" Grid.Row="6"></TextBox>
+            <TextBox x:Name="sodium2" Grid.Column="1" Grid.Row="6"></TextBox>
             
             <Label x:Name="potassiumLabel" Grid.Column="0" Grid.Row="7">Potassium</Label>
-            <TextBox x:Name="potassium" Grid.Column="1" Grid.Row="7"></TextBox>
+            <TextBox x:Name="potassium2"  Grid.Column="1" Grid.Row="7"></TextBox>
             
             <Label x:Name="chlorideLabel" Grid.Column="0" Grid.Row="8">Chloride</Label>
-            <TextBox x:Name="chloride" Grid.Column="1" Grid.Row="8"></TextBox>
+            <TextBox x:Name="chloride2"  Grid.Column="1" Grid.Row="8"></TextBox>
             
             <Label x:Name="bicarbLabel" Grid.Column="0" Grid.Row="9">Bicarb</Label>
-            <TextBox x:Name="bicarb" Grid.Column="1" Grid.Row="9" ></TextBox>
+            <TextBox x:Name="bicarb2"  Grid.Column="1" Grid.Row="9" ></TextBox>
             
             <Label x:Name="BUNLabel" Grid.Column="0" Grid.Row="10">BUN</Label>
-            <TextBox x:Name="BUN" Grid.Column="1" Grid.Row="10" ></TextBox>
+            <TextBox x:Name="BUN2"  Grid.Column="1" Grid.Row="10" ></TextBox>
             
             <Label x:Name="creatinineLabel" Grid.Column="0" Grid.Row="11">Creatinine</Label>
-            <TextBox x:Name="creatinine" Grid.Column="1" Grid.Row="11" ></TextBox>
+            <TextBox x:Name="creatinine2"  Grid.Column="1" Grid.Row="11" ></TextBox>
             
             <Label x:Name="glucoseLabel" Grid.Column="0" Grid.Row="12">Glucose</Label>
-            <TextBox x:Name="glucose" Grid.Column="1" Grid.Row="12" ></TextBox>
+            <TextBox x:Name="glucose2"  Grid.Column="1" Grid.Row="12" ></TextBox>
 
             <Label x:Name="calciumLabel" Grid.Column="0" Grid.Row="13">Calcium</Label>
-            <TextBox x:Name="calcium" Grid.Column="1" Grid.Row="13" ></TextBox>
+            <TextBox x:Name="calcium2"  Grid.Column="1" Grid.Row="13" ></TextBox>
 
             <Label x:Name="albuminLabel" Grid.Column="0" Grid.Row="14">Albumin</Label>
-            <TextBox x:Name="albumin" Grid.Column="1" Grid.Row="14" ></TextBox>
+            <TextBox x:Name="albumin2"  Grid.Column="1" Grid.Row="14" ></TextBox>
 
             <Label x:Name="bilirubinLabel" Grid.Column="0" Grid.Row="15">Bilirubin</Label>
-            <TextBox x:Name="blilrubin" Grid.Column="1" Grid.Row="15" ></TextBox>
+            <TextBox x:Name="bilirubin2"  Grid.Column="1" Grid.Row="15" ></TextBox>
 
             <Label x:Name="ALTLabel" Grid.Column="2" Grid.Row="0">ALT</Label>
-            <TextBox x:Name="ALT" Grid.Column="3" Grid.Row="0" ></TextBox>
+            <TextBox x:Name="ALT2"   Grid.Column="3" Grid.Row="0" ></TextBox>
 
             <Label x:Name="ASTLabel" Grid.Column="2" Grid.Row="1">AST</Label>
-            <TextBox x:Name="AST" Grid.Column="3" Grid.Row="1" ></TextBox>
+            <TextBox x:Name="AST2"  Grid.Column="3" Grid.Row="1" ></TextBox>
 
-            <Label x:Name="allcalinePhosphataseLabel" Grid.Column="2" Grid.Row="2">Alkaline Phosphatase</Label>
-            <TextBox x:Name="allcalinePhosphatase" Grid.Column="3" Grid.Row="2" ></TextBox>
+            <Label x:Name="alkalinePhosphataseLabel" Grid.Column="2" Grid.Row="2">Alkaline Phosphatase</Label>
+            <TextBox x:Name="alkalinePhosphatase2"  Grid.Column="3" Grid.Row="2" ></TextBox>
 
             <Label x:Name="proteinLabel" Grid.Column="2" Grid.Row="3">Protein</Label>
-            <TextBox x:Name="protein" Grid.Column="3" Grid.Row="3" ></TextBox>
+            <TextBox x:Name="protein2"  Grid.Column="3" Grid.Row="3" ></TextBox>
 
             <Label x:Name="ironLabel" Grid.Column="2" Grid.Row="4">Iron</Label>
-            <TextBox x:Name="iron" Grid.Column="3" Grid.Row="4" ></TextBox>
+            <TextBox x:Name="iron2"  Grid.Column="3" Grid.Row="4" ></TextBox>
 
             <Label x:Name="percentSaturationLabel" Grid.Column="2" Grid.Row="5">Percent Saturation</Label>
-            <TextBox x:Name="percentSaturation" Grid.Column="3" Grid.Row="5" ></TextBox>
+            <TextBox x:Name="percentSaturation2"  Grid.Column="3" Grid.Row="5" ></TextBox>
 
             <Label x:Name="ferritinLabel" Grid.Column="2" Grid.Row="6">Ferritin</Label>
-            <TextBox x:Name="ferritin" Grid.Column="3" Grid.Row="6" ></TextBox>
+            <TextBox x:Name="ferritin2"  Grid.Column="3" Grid.Row="6" ></TextBox>
 
             <Label x:Name="magnesiumLabel" Grid.Column="2" Grid.Row="7">Magnesium</Label>
-            <TextBox x:Name="magnesium" Grid.Column="3" Grid.Row="7" ></TextBox>
+            <TextBox x:Name="magnesium2"  Grid.Column="3" Grid.Row="7" ></TextBox>
 
-            <Label x:Name="CA199Label" Grid.Column="2" Grid.Row="8">CA 19-9</Label>
-            <TextBox x:Name="CA199withis" Grid.Column="3" Grid.Row="8" ></TextBox>
+            <Label x:Name="alphaFetoproteinLabel" Grid.Column="2" Grid.Row="8">Alpha Fetoprotein</Label>
+            <TextBox x:Name="alphaFetoprotein2"  Grid.Column="3" Grid.Row="8"></TextBox>
 
-            <Label x:Name="CA125Label" Grid.Column="2" Grid.Row="9">CA-125</Label>
-            <TextBox x:Name="CA125withis" Grid.Column="3" Grid.Row="9" ></TextBox>
+            <Label x:Name="CA199Label" Grid.Column="2" Grid.Row="9">CA 19-9</Label>
+            <TextBox x:Name="CA199withis" Grid.Column="3" Grid.Row="9" ></TextBox>
 
-            <Label x:Name="CA2729Label" Grid.Column="2" Grid.Row="10">CA 27.29</Label>
-            <TextBox x:Name="CA2729withis" Grid.Column="3" Grid.Row="10" ></TextBox>
+            <Label x:Name="CA125Label" Grid.Column="2" Grid.Row="10">CA-125</Label>
+            <TextBox x:Name="CA125withis" Grid.Column="3" Grid.Row="10" ></TextBox>
 
-            <Label x:Name="CEALabel" Grid.Column="2" Grid.Row="11">CEA</Label>
-            <TextBox x:Name="CEAwithis" Grid.Column="3" Grid.Row="11" ></TextBox>
+            <Label x:Name="CA2729Label" Grid.Column="2" Grid.Row="11">CA 27.29</Label>
+            <TextBox x:Name="CA2729withis" Grid.Column="3" Grid.Row="11" ></TextBox>
+
+            <Label x:Name="CEALabel" Grid.Column="2" Grid.Row="12">CEA</Label>
+            <TextBox x:Name="CEAwithis" Grid.Column="3" Grid.Row="12" ></TextBox>
                 
-            <Label x:Name="TSHLabel" Grid.Column="2" Grid.Row="12">TSH</Label>
-            <TextBox x:Name="TSHwithis" Grid.Column="3" Grid.Row="12" ></TextBox>
+            <Label x:Name="TSHLabel" Grid.Column="2" Grid.Row="13">TSH</Label>
+            <TextBox x:Name="TSHwithis" Grid.Column="3" Grid.Row="13" ></TextBox>
                 
-            <Label x:Name="PSALabel" Grid.Column="2" Grid.Row="13">PSA</Label>
-            <TextBox x:Name="PSAwithis" Grid.Column="3" Grid.Row="13"></TextBox>
-
-            <Label x:Name="alphaFetoproteinLabel" Grid.Column="2" Grid.Row="14">Alpha Fetoprotein</Label>
-            <TextBox x:Name="alphaFetoproteinwithis" Grid.Column="3" Grid.Row="14"></TextBox>
+            <Label x:Name="PSALabel" Grid.Column="2" Grid.Row="14">PSA</Label>
+            <TextBox x:Name="PSAwithis" Grid.Column="3" Grid.Row="14"></TextBox>
 
             <Label x:Name="INRLabel" Grid.Column="2" Grid.Row="15">INR</Label>
             <TextBox x:Name="INRwithis" Grid.Column="3" Grid.Row="15" ></TextBox>

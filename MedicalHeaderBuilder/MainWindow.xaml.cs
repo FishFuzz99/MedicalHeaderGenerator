@@ -52,6 +52,8 @@ namespace MedicalHeaderBuilder
         private void Generate_Header_Click(object sender, RoutedEventArgs e)
         {
             values.result = "";
+            char[] charsToTrim = { ',', ' ', '.' };
+            int priorGroup = -1;
             foreach (UIElement element in Grid1.Children)
             {
                 if (element.GetType() == typeof(TextBox))
@@ -62,24 +64,37 @@ namespace MedicalHeaderBuilder
                         if (element2.GetType() == typeof(Label))
                         {
                             Label label = (Label)element2;
-                            if (label.Name.Replace("Label", "") == textBox.Name.Replace("withis", ""))
+
+                            if (textBox.Name.Contains(label.Name.Replace("Label", "")))
                             {
-                                if (textBox.Name.Contains("withis"))
+                                int group;
+                                bool capitalize = false;
+                                if (textBox.Name[textBox.Name.Length - 1].Equals('1') || textBox.Name[textBox.Name.Length - 1].Equals('2'))
                                 {
-                                    checkAndAppend(textBox, label, true);
+                                    group = int.Parse(textBox.Name[textBox.Name.Length - 1].ToString());
                                 }
                                 else
                                 {
-                                    checkAndAppend(textBox, label, false);
+                                    group = 0;
                                 }
-
+                                if (priorGroup == -1)
+                                {
+                                    priorGroup = group;
+                                }
+                                else if (priorGroup != group && (values.result != null && values.result != ""))
+                                {
+                                    values.result = values.result.TrimEnd(charsToTrim) + ". ";
+                                    capitalize = true;
+                                    priorGroup = group;
+                                }
+                                checkAndAppend(textBox, label, textBox.Name.Contains("withis"), capitalize);
                             }
                         }
                     }
                 }
             }
 
-            char[] charsToTrim = { ',', ' ', '.' };
+           
             if (values.result != "" && values.result != null)
             {
                 values.result = values.result.TrimEnd(charsToTrim) + ".";
@@ -107,7 +122,7 @@ namespace MedicalHeaderBuilder
             return true;
         }
 
-        public void checkAndAppend(TextBox field, Label label, bool withIs)
+        public void checkAndAppend(TextBox field, Label label, bool withIs, bool capitalize)
         {
             String withIsString = "";
             String endingPunctuation = ",";
@@ -128,7 +143,7 @@ namespace MedicalHeaderBuilder
 
                     field.Text = string.Format("{0:n0}", Convert.ToInt64(field.Text));
                 }
-                if (values.result == null || values.result == "")
+                if (values.result == null || values.result == "" || capitalize)
                 {
                     if (IsAllUpper(label.Content.ToString()))
                     {
