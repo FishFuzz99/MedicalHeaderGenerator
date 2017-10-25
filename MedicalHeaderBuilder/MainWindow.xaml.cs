@@ -59,6 +59,10 @@ namespace MedicalHeaderBuilder
                 if (element.GetType() == typeof(TextBox))
                 {
                     TextBox textBox = (TextBox)element;
+                    if (textBox.GetLineText(0) == "")
+                    {
+                        continue;
+                    }
                     foreach (UIElement element2 in Grid1.Children)
                     {
                         if (element2.GetType() == typeof(Label))
